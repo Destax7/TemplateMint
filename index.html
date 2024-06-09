@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />        
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Mint - SinglePage React Portfolio</title>    
+        <link rel="stylesheet" href="src/css/frame.css">
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="src/css/all.min.css">
+
+    </head>
+    <body class="p-relative"> 
+        <nav>
+            <div class="container flex-between">
+                <img src="favicon.ico" alt="logo" class="width-100">
+                <ul class="flex-between gap-8 m768-none mainul">
+                    <li>
+                        <a href="#work" class="width-120 t-center d-block pad-12 tran-03 upper-case weight-500">Work</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="width-120 t-center d-block pad-12 tran-03 upper-case weight-500">About</a>
+                    </li>
+                    <li>
+                        <a href="#blog" class="width-120 t-center d-block pad-12 tran-03 upper-case weight-500">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="width-120 t-center d-block pad-12 tran-03 upper-case weight-500">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-none m768-block">
+                    <label for="navopen" class="d-block">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </label>
+                    <input  id="navopen" type="checkbox">
+                    <div class="d-none meganav p-fixed width-50p">
+                        <label for="navclose">
+                            <a href="">x</a>
+                        </label>
+                        <input id="navclose" type="checkbox">
+                        <img src="src/assets/navbar/logo-yellow.svg" alt="logo" class="width-80 d-block ml-a mr-a mt-32">
+                        <ul class="mt-32 pt-32">
+                            <li>
+                                <a href="#work" class="upper-case c-white width-fit ml-a mr-a d-block pt-20 pb-20 weight-500 fs-20">
+                                    Work
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="#about" class="upper-case c-white width-fit ml-a mr-a d-block pt-20 pb-20 weight-500 fs-20">
+                                    About
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="#blog" class="upper-case c-white width-fit ml-a mr-a d-block pt-20 pb-20 weight-500 fs-20">
+                                    Blog
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="#contact" class="upper-case c-white width-fit ml-a mr-a d-block pt-20 pb-20 weight-500 fs-20">
+                                    Contact
+                                </a>                                
+                            </li>
+                        </ul>
+                    </div>                                        
+                </div>                
+            </div>            
+        </nav>        
+        <section class="landing pt-32 mb-128">
+            <div class="container flex-between gap-24">
+                <div class="info">
+                    <h2 class="fs-64 c-black weight-800 mb-32 fs-mobile">
+                        Hello!!!                        
+                        <br>
+                        We Are Creative Digital Agency.
+                    </h2>
+                    <p class="fs-12 weight-500 lh-2 mb-32 center-992">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed doeiusmod tempor incididunt
+                        ut labore et dolore magna aliqua
+                    </p>
+                    <a href="" class="center-992 special-button">send message</a>
+                </div>
+                <img src="src/assets/landing.jpg" alt="landing" class="width-500">
+            </div>
+        </section>
+        <section class="showcase" id="work">
+            <div class="container">
+                <h2 class="upper-case special-heading mb-32  fs-mobile">Work Showcase.</h2>
+                <div class="flex-between mb-64 goods gap-8">
+                    <ul class="flex gap-8">
+                        <li class="upper-case pt-8 pb-8 pl-20 pr-20 fs-13 weight-500 bg-yellow tran-03">
+                            All
+                        </li>
+                        <li class="upper-case pt-8 pb-8 pl-20 pr-20 fs-13 weight-500 tran-03">
+                            Branding
+                        </li>
+                        <li class="upper-case pt-8 pb-8 pl-20 pr-20 fs-13 weight-500 tran-03">
+                            Illustrations
+                        </li>
+                        <li class="upper-case pt-8 pb-8 pl-20 pr-20 fs-13 weight-500 tran-03">
+                            Web
+                        </li>
+                    </ul>
+                    <div class="sort upper-case pt-8 pb-8 pl-20 pr-20 fs-13  tran-03 flex-between gap-8 p-relative">                        
+                        <h4 class="weight-500">
+                            Newest First                            
+                        </h4>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="d-none p-absolute">
+                            <h5 class="upper-case pt-20 pb-20 fs-13 weight-500">
+                                Newest
+                            </h5>
+                            <h5 class="upper-case pt-20 pb-20 fs-13 weight-500">
+                                Oldest
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery mb-64">                    
+                    <div class="col">
+                        <div class="p-relative overflow-h">
+                            <img src="src/assets/lamp.jpg" alt="pic1">                            
+                            <div class="overlay flex-center"> 
+                                <h2 class="upper-case mb-8 fs-32 weight-800 c-black">Lamp</h2>
+                                <h5 class="upper-case fs-13 weight-500">Branding</h5>
+                            </div>
+                        </div>
+                        <div class="p-relative overflow-h">
+                            <img src="src/assets/shoe.jpg" alt="pic4">    
+                            <div class="overlay flex-center"> 
+                                <h2 class="upper-case mb-8 fs-32 weight-800 c-black">Sneakers</h2>
+                                <h5 class="upper-case fs-13 weight-500">Web</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-relative overflow-h">
+                            <img src="src/assets/watch.jpg" alt="pic2">
+                            <div class="overlay flex-center"> 
+                                <h2 class="upper-case mb-8 fs-32 weight-800 c-black">Smartwatch</h2>
+                                <h5 class="upper-case fs-13 weight-500">Web</h5>
+                            </div>
+                        </div>
+                        <div class="p-relative overflow-h">
+                            <img src="src/assets/label.jpg" alt="pic5">    
+                            <div class="overlay flex-center"> 
+                                <h2 class="upper-case mb-8 fs-32 weight-800 c-black">Label</h2>
+                                <h5 class="upper-case fs-13 weight-500">Illustrations</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-relative overflow-h">
+                            <img src="src/assets/headphones.jpg" alt="pic3">        
+                            <div class="overlay flex-center"> 
+                                <h2 class="upper-case mb-8 fs-32 weight-800 c-black">Speakerphone</h2>
+                                <h5 class="upper-case fs-13 weight-500">Illustrations</h5>
+                            </div>
+                        </div>
+                        <div class="p-relative overflow-h">
+                            <img src="src/assets/lemons.jpg" alt="pic6">            
+                            <div class="overlay flex-center"> 
+                                <h2 class="upper-case mb-8 fs-32 weight-800 c-black">Lemons</h2>
+                                <h5 class="upper-case fs-13 weight-500">branding</h5>
+                            </div>
+                        </div>
+                    </div>                                                                                                                                                                                                                                                            
+                </div>
+                <a href="" class="special-button ml-a mr-a mb-64">Have work for us ?</a>            
+            </div>
+            <div class="partners bg-secondary mb-64">
+                <div class="container flex-between pt-64 pb-64 mb-128">
+                    <img src="https://ivkovic.me/themes/min/static/media/partner01.1f6de9f0.svg" class="width-a" alt="partner1 mb-64">
+                    <img src="https://ivkovic.me/themes/min/static/media/partner02.d8f2a498.svg" class="width-a" alt="partner2 mb-64">
+                    <img src="https://ivkovic.me/themes/min/static/media/partner03.0d091731.svg" class="width-a" alt="partner3 mb-64">
+                    <img src="https://ivkovic.me/themes/min/static/media/partner04.81292e3c.svg" class="width-a" alt="partner4 mb-64">
+                    <img src="https://ivkovic.me/themes/min/static/media/partner05.d39e28a3.svg" class="width-a" alt="partner5">
+                    <img src="https://ivkovic.me/themes/min/static/media/partner06.a0c63ad5.svg" class="width-a" alt="partner6">
+                </div>
+            </div>
+        </section>
+        <section class="about-us" id="about">
+            <div class="container">
+                <h2 class="special-heading upper-case mb-32 center-992 fs-mobile">
+                    About us.
+                </h2>
+                <p class="center-992 lh-25 fs-12 weight-500 c-black width-50p mb-64">
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="card-holder flex-between mb-128 gap-24">
+                    <div class="card p-relative">                        
+                        <img src="src/assets/person-1.jpg" class="d-block" alt="luke">
+                        <div class="info">                        
+                            <h4 class="weight-800 fs-16 c-black mb-8">Luke Skywalker</h4>
+                            <h5 class="fs-12 c-white">Web designer</h5>
+                        </div>
+                    </div>
+                    <div class="card p-relative">                        
+                        <img src="src/assets/person-2.jpg" class="d-block" alt="luke">
+                        <div class="info">
+                            <h4 class="weight-800 fs-16 c-black mb-8">Han Solo</h4>
+                            <h5 class="fs-12 c-white">Graphic designer</h5>
+                        </div>
+                    </div>
+                    <div class="card read">
+                        <h4 class="fs-20 c-black weight-800 mb-24">
+                            Little About Us                        
+                        </h4>
+                        <p class="lh-25 c-black weight-500 fs-12 mb-20">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod temp orincididunt 
+                            ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="c-black weight-500 fs-12 tran-03">Read More</a>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="blog bg-secondary pt-128 pb-128" id="blog">
+            <div class="container">
+                <h2 class="special-heading mb-32 fs-mobile">
+                    Our blog.
+                </h2>
+                <p class="center-992 lh-25 fs-12 weight-500 c-black width-50p mb-64">
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="card-holder gap-24">
+                    <div class="card bg-white">
+                        <div class="looks">
+                            <div class="img-holder">
+                                <img src="src/assets/blog/dove.jpg" alt="dove">                            
+                                <div class="overlay d-none">
+                                    <h4 class="upper-case fs-20 c-black weight-800">Read More</h4>
+                                </div>
+                            </div>                                                    
+                        </div>
+                        <div class="info pad-32">
+                            <h3 class="upper-case fs-15 weight-800 mb-16">
+                                Super Blog Article
+                            </h3>
+                            <p class="fs-12 lh-2 weight-500 mb-16">
+                                Lorem ipsum dolor sit amet,                                 
+                                ut labore et dolore magna aliqua.
+                            </p> 
+                            <h5 class="fs-12 weight-500">
+                                21 April 2020
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="card bg-white">
+                        <div class="looks">
+                            <div class="img-holder">
+                                <img src="src/assets/blog/chairs.jpg" alt="dove">                            
+                                <div class="overlay d-none">
+                                    <h4 class="upper-case fs-20 c-black weight-800">Read More</h4>
+                                </div>
+                            </div>                                                    
+                        </div>
+                        <div class="info pad-32">
+                            <h3 class="upper-case fs-15 weight-800 mb-16">
+                                Awesome Article
+                            </h3>
+                            <p class="fs-12 lh-2 weight-500 mb-16">
+                                Lorem ipsum dolor sit amet,                                 
+                                ut labore et aliqua.
+                            </p> 
+                            <h5 class="fs-12 weight-500">
+                                27 April 2020
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="card bg-white">
+                        <div class="looks">
+                            <div class="img-holder">
+                                <img src="src/assets/blog/dog.jpg" alt="dove">                            
+                                <div class="overlay d-none">
+                                    <h4 class="upper-case fs-20 c-black weight-800">Read More</h4>
+                                </div>
+                            </div>                                                    
+                        </div>
+                        <div class="info pad-32">
+                            <h3 class="upper-case fs-15 weight-800 mb-16">
+                                Super Title
+                            </h3>
+                            <p class="fs-12 lh-2 weight-500 mb-16">
+                                Lorem ipsum dolor sit amet,                                 
+                                ut labore et dolore magna aliqua.
+                            </p> 
+                            <h5 class="fs-12 weight-500">
+                                13 May 2020
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="contact-us pt-128 pb-64" id="contact">            
+            <div class="container">
+                <h2 class="special-heading mb-32 fs-mobile">
+                    Contact us.
+                </h2>
+                <p class="center-992 lh-25 fs-12 weight-500 c-black width-50p mb-64">
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="wrapper flex-between gap-24 mb-64">
+                    <form action="">
+                        <h3 class="capitalize weight-800 fs-32 c-black mb-32 center-992">Send us a Message.</h3>
+                        <input type="text" placeholder="Name" required class="d-block">
+                        <input type="email" placeholder="Email" required class="d-block">
+                        <textarea placeholder="Message..." required class="d-block"></textarea>
+                        <a href="#" class="special-button mt-32 center-992">Send Message</a>
+                    </form>
+                    <div class="img-holder">
+                        <img src="src/assets/building.jpg" alt="me">
+                    </div>
+                </div>
+                <div class="info-holder flex-evenly t-center gap-16 mb-64">
+                    <div>
+                        <img src="src/assets/contact/contact-info-icon1.svg" alt="svg">
+                        <h4 class="fs-13 weight-500 c-black mt-24">
+                            1211 Awesome Avenue,
+                            <span class="d-block mt-8">
+                                NY USD
+                            </span>                            
+                        </h4>
+                    </div>
+                    <div>
+                        <img src="src/assets/contact/contact-info-icon2.svg" alt="svg">
+                        <h4 class="fs-13 weight-500 c-black mt-24">
+                            +00 123 - 456 -78
+                            <span class="d-block mt-8">
+                                +00 987 - 654 -32
+                            </span>                            
+                        </h4>
+                    </div>
+                    <div>
+                        <img src="src/assets/contact/contact-info-icon3.svg" alt="svg">
+                        <h4 class="fs-13 weight-500 c-black mt-24">
+                            mint@mintmail.com
+                        </h4>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="#">                    
+                        <i class="fa-brands fa-facebook-f c-black fs-32 tran-03"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter c-black fs-32 tran-03"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok c-black fs-32 tran-03"></i>
+                    </a>
+                </div>
+            </div>            
+        </section>
+        <footer class="bg-black">
+            <div class="container pt-64 pb-64 flex-between">
+                <div class="flex-between gap-16">
+                    <img src="src/assets/footer/logo.svg" alt="logo">
+                    <h4 class="c-white fs-13 weight-500">
+                        © 2020 - Mint,All Right Reserved
+                    </h4>
+                </div>
+                <div class="flex-between gap-8">
+                    <a href="#" class="upper-case c-white fs-12 weight-500">Back to top</a>
+                    <img src="src/assets/footer/arrow.svg" alt="arrow">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
